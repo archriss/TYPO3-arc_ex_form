@@ -1,0 +1,10 @@
+# frontend configuration
+plugin.tx_form.settings.yamlConfigurations {
+	arcExForm = EXT:arc_ex_form/Configuration/Yaml/BaseSetup.yaml
+}
+
+# backend configuration
+module.tx_form.settings.yamlConfigurations {
+	arcExFormBase = EXT:arc_ex_form/Configuration/Yaml/BaseSetup.yaml
+	arcExFormEditor = EXT:arc_ex_form/Configuration/Yaml/FormEditorSetup.yaml
+}

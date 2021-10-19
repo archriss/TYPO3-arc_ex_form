@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2016-06-17T10:37:20Z" product-name="arc_ex_form">
+		<header/>
+		<body>
+			<trans-unit id="formEditor.elements.Form.finisher.ReceiverModifier.editor.header.label">
+				<source>Receiver list modifier</source>
+			</trans-unit>
+			<trans-unit id="formEditor.elements.Form.finisher.ReceiverModifier.editor.subject.label">
+				<source>Field containing subject to test</source>
+			</trans-unit>
+			<trans-unit id="formEditor.elements.Form.finisher.ReceiverModifier.editor.recipients.label">
+				<source>Subject to recipient list</source>
+			</trans-unit>
+			<trans-unit id="formEditor.elements.Form.finisher.ReceiverModifier.editor.recipients.fieldExplanationText">
+				<source>For each defined subject, recipient will be redefined</source>
+			</trans-unit>
+			<trans-unit id="formEditor.elements.Form.finisher.ReceiverModifier.editor.recipients.gridColumns.value.title">
+				<source>Subject value</source>
+			</trans-unit>
+			<trans-unit id="formEditor.elements.Form.finisher.ReceiverModifier.editor.recipients.gridColumns.label.title">
+				<source>Recipient email</source>
+			</trans-unit>
+			<trans-unit id="formEditor.elements.Form.finisher.ReceiverModifier.editor.defaultName.label">
+				<source>Default name for overridden recipient</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

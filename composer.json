@@ -1,0 +1,25 @@
+{
+    "name": "archriss/arc-ex-form",
+    "description": "Extends the TYPO3 form with a receiver finisher, choose receiver email depending on a select field value.",
+    "type": "typo3-cms-extension",
+    "require": {
+        "typo3/cms-form": "^10.4 || ^11.5"
+    },
+    "license": "GPL-2.0",
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "arc_ex_form"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Archriss\\ArcExForm\\": "Classes/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Christophe Monard",
+            "email": "cmonard@archriss.com"
+        }
+    ]
+}

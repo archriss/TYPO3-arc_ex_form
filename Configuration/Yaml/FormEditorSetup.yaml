@@ -1,0 +1,109 @@
+TYPO3:
+  CMS:
+    Form:
+      prototypes:
+        standard:
+          formElementsDefinition:
+            Form:
+              formEditor:
+                # Add to finisher list
+                editors:
+                  900:
+                    selectOptions:
+                      170:
+                        value: ReceiverModifier
+                        label: formEditor.elements.Form.finisher.ReceiverModifier.editor.header.label
+                # Add display informations
+                propertyCollections:
+                  finishers:
+                    170:
+                      identifier: ReceiverModifier
+                      editors:
+                        100:
+                          identifier: header
+                          templateName: Inspector-CollectionElementHeaderEditor
+                          label: formEditor.elements.Form.finisher.ReceiverModifier.editor.header.label
+                        200:
+                          identifier: subject
+                          templateName: Inspector-TextEditor
+                          label: formEditor.elements.Form.finisher.ReceiverModifier.editor.subject.label
+                          propertyPath: options.subject
+                          enableFormelementSelectionButton: true
+                          propertyValidators:
+                            10: NotEmpty
+                            20: FormElementIdentifierWithinCurlyBracesInclusive
+                        350:
+                          identifier: recipients
+                          templateName: Inspector-PropertyGridEditor
+                          label: formEditor.elements.Form.finisher.ReceiverModifier.editor.recipients.label
+                          propertyPath: options.recipients
+                          propertyValidators:
+                            10: NotEmpty
+                          fieldExplanationText: formEditor.elements.Form.finisher.ReceiverModifier.editor.recipients.fieldExplanationText
+                          isSortable: true
+                          enableAddRow: true
+                          enableDeleteRow: true
+                          useLabelAsFallbackValue: false
+                          gridColumns:
+                            -
+                              name: value
+                              title: formEditor.elements.Form.finisher.ReceiverModifier.editor.recipients.gridColumns.value.title
+                            -
+                              name: label
+                              title: formEditor.elements.Form.finisher.ReceiverModifier.editor.recipients.gridColumns.label.title
+                        500:
+                          identifier: defaultName
+                          templateName: Inspector-TextEditor
+                          label: formEditor.elements.Form.finisher.ReceiverModifier.editor.defaultName.label
+                          propertyPath: options.defaultName
+                          propertyValidators:
+                            10: NotEmpty
+                        9999:
+                          identifier: removeButton
+                          templateName: Inspector-RemoveElementEditor
+          # Define finisher
+          finishersDefinition:
+            ReceiverModifier:
+              formEditor:
+                iconIdentifier: form-finisher
+                label: formEditor.elements.Form.finisher.ReceiverModifier.editor.header.label
+                predefinedDefaults:
+                  options:
+                    subject: ''
+                    recipients: {  }
+                    defaultName: ''
+              FormEngine:
+                label: formEditor.elements.Form.finisher.ReceiverModifier.editor.header.label
+                elements:
+                  subject:
+                    label: formEditor.elements.Form.finisher.ReceiverModifier.editor.subject.label
+                    config:
+                      type: input
+                      eval: required
+                  recipients:
+                    title: formEditor.elements.Form.finisher.ReceiverModifier.recipients.editor.label
+                    type: array
+                    section: true
+                    sectionItemKey: name
+                    sectionItemValue: email
+                    el:
+                      _arrayContainer:
+                        type: array
+                        title: tt_content.finishersDefinition.EmailToSender.recipients.item.label
+                        el:
+                          name:
+                            TCEforms:
+                              label: formEditor.elements.Form.finisher.ReceiverModifier.editor.recipients.gridColumns.value.title
+                              config:
+                                type: input
+                          email:
+                            TCEforms:
+                              label: formEditor.elements.Form.finisher.ReceiverModifier.editor.recipients.gridColumns.label.title
+                              config:
+                                type: input
+                                eval: 'required,email'
+                  defaultName:
+                    label: formEditor.elements.Form.finisher.ReceiverModifier.editor.defaultName.label
+                    config:
+                      type: input
+                      eval: required
