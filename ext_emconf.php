@@ -8,8 +8,8 @@ $EM_CONF[$_EXTKEY] = [
     'author_email' => 'cmonard@archriss.com',
     'author_company' => 'Archriss',
     'state' => 'stable',
-    'clearCacheOnLoad' => 0,
-    'version' => '10.4.0',
+    'clearCacheOnLoad' => 1,
+    'version' => '10.4.1',
     'constraints' => [
         'depends' => [
             'typo3' => '10.4.0-10.4.99',
@@ -19,4 +19,3 @@ $EM_CONF[$_EXTKEY] = [
         'suggests' => [],
     ],
 ];
- 
