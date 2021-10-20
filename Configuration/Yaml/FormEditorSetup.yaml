@@ -32,6 +32,7 @@ TYPO3:
                           propertyValidators:
                             10: NotEmpty
                             20: FormElementIdentifierWithinCurlyBracesInclusive
+                          fieldExplanationText: formEditor.elements.Form.finisher.ReceiverModifier.editor.subject.fieldExplanationText
                         350:
                           identifier: recipients
                           templateName: Inspector-PropertyGridEditor
@@ -58,6 +59,7 @@ TYPO3:
                           propertyPath: options.defaultName
                           propertyValidators:
                             10: NotEmpty
+                          fieldExplanationText: formEditor.elements.Form.finisher.ReceiverModifier.editor.defaultName.fieldExplanationText
                         9999:
                           identifier: removeButton
                           templateName: Inspector-RemoveElementEditor

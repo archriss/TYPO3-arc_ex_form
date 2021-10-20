@@ -9,11 +9,14 @@
 			<trans-unit id="formEditor.elements.Form.finisher.ReceiverModifier.editor.subject.label">
 				<source>Field containing subject to test</source>
 			</trans-unit>
+			<trans-unit id="formEditor.elements.Form.finisher.ReceiverModifier.editor.subject.fieldExplanationText">
+				<source>Usualy a selectbox field containing subjects list</source>
+			</trans-unit>
 			<trans-unit id="formEditor.elements.Form.finisher.ReceiverModifier.editor.recipients.label">
 				<source>Subject to recipient list</source>
 			</trans-unit>
 			<trans-unit id="formEditor.elements.Form.finisher.ReceiverModifier.editor.recipients.fieldExplanationText">
-				<source>For each defined subject, recipient will be redefined</source>
+				<source>For each defined subject, recipient will be redefined (can be formatted like "email@domain.tld" or "recipient name email@domain.tld")</source>
 			</trans-unit>
 			<trans-unit id="formEditor.elements.Form.finisher.ReceiverModifier.editor.recipients.gridColumns.value.title">
 				<source>Subject value</source>
@@ -23,6 +26,9 @@
 			</trans-unit>
 			<trans-unit id="formEditor.elements.Form.finisher.ReceiverModifier.editor.defaultName.label">
 				<source>Default name for overridden recipient</source>
+			</trans-unit>
+			<trans-unit id="formEditor.elements.Form.finisher.ReceiverModifier.editor.defaultName.fieldExplanationText">
+				<source>If recipient name is not set in subject to recipient list, this name will be used as defaut name</source>
 			</trans-unit>
 		</body>
 	</file>
